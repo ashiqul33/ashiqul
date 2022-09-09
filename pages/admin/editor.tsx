@@ -1,6 +1,6 @@
-import React from 'react'
-import Head from 'next/head'
-import { Admin, Editor } from 'react-bricks'
+import React from "react";
+import Head from "next/head";
+import { Admin, Editor } from "react-bricks";
 
 const AdminEditor: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const AdminEditor: React.FC = () => {
       </Head>
       <Editor />
     </Admin>
-  )
-}
+  );
+};
 
-export default AdminEditor
+export default AdminEditor;

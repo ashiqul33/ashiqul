@@ -1,6 +1,6 @@
-import React from 'react'
-import Head from 'next/head'
-import { Admin, Playground } from 'react-bricks'
+import React from "react";
+import Head from "next/head";
+import { Admin, Playground } from "react-bricks";
 
 const AdminPlayground: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const AdminPlayground: React.FC = () => {
       </Head>
       <Playground />
     </Admin>
-  )
-}
+  );
+};
 
-export default AdminPlayground
+export default AdminPlayground;

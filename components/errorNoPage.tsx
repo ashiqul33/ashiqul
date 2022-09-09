@@ -8,7 +8,7 @@ const ErrorNoPage = () => {
         React Bricks cannot find a page for the specified slug.
       </p>
     </div>
-  )
-}
+  );
+};
 
-export default ErrorNoPage
+export default ErrorNoPage;

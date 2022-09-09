@@ -1,22 +1,22 @@
-import Link from 'next/link'
-import { useRouter } from 'next/router'
-import { types } from 'react-bricks/frontend'
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { types } from "react-bricks/frontend";
 
 const NextLink: types.RenderLocalLink = ({
   href,
   className,
   activeClassName,
   isAdmin,
-  children
+  children,
 }) => {
-  const router = useRouter()
+  const router = useRouter();
 
-  let anchorClassName = ''
+  let anchorClassName = "";
 
   if (router.pathname === href) {
-    anchorClassName = activeClassName
+    anchorClassName = activeClassName;
   } else {
-    anchorClassName = className
+    anchorClassName = className;
   }
 
   if (isAdmin) {
@@ -24,13 +24,13 @@ const NextLink: types.RenderLocalLink = ({
       <Link href={href}>
         <a className={anchorClassName}>{children}</a>
       </Link>
-    )
+    );
   }
   return (
     <Link href="/[slug]" as={href}>
       <a className={anchorClassName}>{children}</a>
     </Link>
-  )
-}
+  );
+};
 
-export default NextLink
+export default NextLink;

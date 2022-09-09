@@ -1,6 +1,6 @@
-import React from 'react'
-import Head from 'next/head'
-import { Admin, AppSettings } from 'react-bricks'
+import React from "react";
+import Head from "next/head";
+import { Admin, AppSettings } from "react-bricks";
 
 const AdminAppSettings: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const AdminAppSettings: React.FC = () => {
       </Head>
       <AppSettings />
     </Admin>
-  )
-}
+  );
+};
 
-export default AdminAppSettings
+export default AdminAppSettings;
