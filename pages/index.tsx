@@ -31,8 +31,11 @@ const Home: React.FC<HomeProps> = ({ page, error }) => {
       {pageOk && (
         <>
           <Head>
-            <title>{page.meta.title}</title>
-            <meta name="description" content={page.meta.description} />
+            <title>Mohammad Ashiqul Islam</title>
+            <meta
+              name="description"
+              content="My name is Ashiqul Islam. I am a .NET developer with experience in both back-end and front-end development."
+            />
           </Head>
           <PageViewer page={pageOk} />
         </>
