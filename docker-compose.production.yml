@@ -2,8 +2,8 @@ version: "3"
 
 services:
   app:
-    container_name: reactbricks
-    image: ashiqul/reactbricks
+    container_name: reactbricks_portfolio
+    image: ashiqul33/portfolio:reactbricks
     build:
       dockerfile: Dockerfile.production
 
@@ -12,8 +12,8 @@ services:
     #   - 3000:3000
 
   nginx:
-    container_name: nginx_reactbricks
-    image: ashiqul/nginx_reactbricks
+    container_name: reactbricks_nginx
+    image: ashiqul33/portfolio:nginx
     build: ./nginx
     ports:
       - 80:80
