@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  app:
+    container_name: reactbricks
+    image: ashiqul/reactbricks
+    build:
+      dockerfile: Dockerfile.production
+
+    # remove this option because serve with nginx
+    # ports:
+    #   - 3000:3000
+
+  nginx:
+    container_name: nginx_reactbricks
+    image: ashiqul/nginx_reactbricks
+    build: ./nginx
+    ports:
+      - 80:80

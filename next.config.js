@@ -4,4 +4,5 @@ module.exports = {
     defaultLocale: "en",
     localeDetection: false,
   },
+  output: "standalone",
 };
