@@ -1,6 +1,5 @@
-import { useContext } from "react";
 import {
-  ReactBricksContext,
+  useReactBricksContext,
   PageViewer,
   fetchPage,
   cleanPage,
@@ -22,7 +21,7 @@ interface HomeProps {
 const Home: React.FC<HomeProps> = ({ page, error }) => {
   // Clean the received content
   // Removes unknown or not allowed bricks
-  const { pageTypes, bricks } = useContext(ReactBricksContext);
+  const { pageTypes, bricks } = useReactBricksContext();
 
   const pageOk = page ? cleanPage(page, pageTypes, bricks) : null;
 
