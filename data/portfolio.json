@@ -1,0 +1,67 @@
+{
+  "name": "Mohammad Ashiqul Islam",
+  "title": "Senior Software Engineer & Full-Stack Developer",
+  "email": "ashiqul.vercel.app@ashiqul33@gmail.com",
+  "github": "https://github.com/mdashiqulislam",
+  "linkedin": "https://www.linkedin.com/in/ashiqul33",
+  "image": "/img/mohammad-ashiqul-islam.png",
+  "about": {
+    "description": [
+      "I'm a senior software engineer with expertise in JavaScript, NodeJS, and RESTful APIs. I'm passionate about creating scalable backend systems and contributing to dynamic projects that push the boundaries of what's possible in web development.",
+      "When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying a good cup of coffee while brainstorming innovative solutions to complex problems."
+    ]
+  },
+  "skills": [".NET", "React", "Vue", "Node.js", "TypeScript", "JavaScript", "C#", "SQL"],
+  "experience": [
+    {
+      "company": "Gakk Media (BD) Ltd.",
+      "role": "Sr. Software Engineer",
+      "period": "October 2023 – July 2024",
+      "responsibilities": [
+        "Developed RESTful APIs using .NET, Entity Framework, and SQL Server",
+        "Designed and implemented frontend using NextJS",
+        "Integrated payment APIs including Nagad and bKash"
+      ]
+    },
+    {
+      "company": "Daniyal Technologies",
+      "role": "Software Engineer",
+      "period": "March 2023 – September 2023",
+      "responsibilities": [
+        "Developed API using NestJS, TypeORM, and MySQL",
+        "Implemented fast search functionality using Elastic NoSQL database",
+        "Designed frontend using NextJS and Vue"
+      ]
+    },
+    {
+      "company": "Computer Ease Limited",
+      "role": "Programmer",
+      "period": "July 2021 – Feb 2023",
+      "responsibilities": [
+        "Migrated .NET application and database to Azure Services",
+        "Developed enterprise software for various companies",
+        "Implemented system designs and fixed bugs"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Online Exam System",
+      "description": "An online examination system for multiple-choice and written exams with result viewing and leaderboard features.",
+      "image": "/placeholder.svg?height=200&width=400&text=Online+Exam+System",
+      "tags": ["TypeScript", "NestJS", "NextJS", "PostgreSQL"]
+    },
+    {
+      "title": "HGS Hydro Shop",
+      "description": "E-commerce system for a leading indoor gardening supply company in the USA.",
+      "image": "/placeholder.svg?height=200&width=400&text=HGS+Hydro+Shop",
+      "tags": ["JavaScript", "NestJS", "NuxtJS", "MySQL"]
+    },
+    {
+      "title": "My Play Game",
+      "description": "Online platform for game subscriptions with robust backend API and interactive frontend.",
+      "image": "/placeholder.svg?height=200&width=400&text=My+Play+Game",
+      "tags": ["JavaScript", ".Net 6", "ReactJS", "SQL Server"]
+    }
+  ]
+}
