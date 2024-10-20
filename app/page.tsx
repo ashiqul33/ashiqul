@@ -71,7 +71,7 @@ export default function Home() {
       <main className="container mx-auto px-4 sm:px-6 lg:px-8">
         <section className="py-12 md:py-20 flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 mb-8 md:mb-0">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Hi, I&apos;m {portfolio.name} 👋</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Hi, I&apos;m {portfolio.nickName} 👋</h1>
             <p className="text-lg md:text-xl text-gray-400 mb-6">{portfolio.title}</p>
             <div className="flex space-x-4">
               <Button variant="outline" size="icon" asChild>
