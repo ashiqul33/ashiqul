@@ -85,9 +85,9 @@
       "role": "Sr. Software Engineer",
       "period": "October 2023 – July 2024",
       "responsibilities": [
-        "Developed RESTful APIs using .NET, Entity Framework, and SQL Server",
-        "Designed and implemented frontend using NextJS",
-        "Integrated payment APIs including Nagad and bKash"
+        "Developed RESTful APIs using .NET, Entity Framework, and SQL Server, optimizing data management for scalability and performance, resulting in a 30% increase in data retrieval speed.",
+        "Designed and implemented a visually appealing and intuitive frontend utilizing NextJS, enhancing engagement.",
+        "Integrated payment APIs including Nagad and bKash to facilitate seamless transaction processing."
       ],
       "logo": "/img/gakk-media.png"
     },
@@ -96,9 +96,9 @@
       "role": "Software Engineer",
       "period": "March 2023 – September 2023",
       "responsibilities": [
-        "Developed API using NestJS, TypeORM, and MySQL",
-        "Implemented fast search functionality using Elastic NoSQL database",
-        "Designed frontend using NextJS and Vue"
+        "Developed API using NestJS, TypeORM, and MySQL, ensuring efficient and scalable data management.",
+        "Implemented fast search functionality using Elastic NoSQL database, enhancing user experience with faster and more accurate search results.",
+        "Designed frontend using NextJS and Vue, creating a visually appealing and user-friendly interface."
       ],
       "logo": "/img/daniyal.webp"
     },
@@ -107,9 +107,11 @@
       "role": "Programmer",
       "period": "July 2021 – Feb 2023",
       "responsibilities": [
-        "Migrated .NET application and database to Azure Services",
-        "Developed enterprise software for various companies",
-        "Implemented system designs and fixed bugs"
+        "Successfully migrated a .NET application and database from a virtual machine to an Azure server, resulting in improved application performance and reduced infrastructure costs.",
+        "Developed enterprise software for various companies, meeting client requirements and delivering high-quality software within project timelines.",
+        "Implemented system designs provided by the team lead, ensuring adherence to coding standards and best practices.",
+        "Analyzed various systems to identify and fix bugs, resulting in improved system stability and user experience.",
+        "Wrote efficient code and SQL queries, and provided support for already developed software, ensuring prompt resolution of issues and high customer satisfaction."
       ],
       "logo": "/img/cel.webp"
     }
