@@ -15,13 +15,70 @@
       "When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying a good cup of coffee while brainstorming innovative solutions to complex problems."
     ],
     "quickFacts": [
-      "B.Sc in C.S.E",
+      "B.Sc in Computer Science Engineering",
       "Full Stack Developer",
       "Quick Learner",
-      "Aspiring indie hacker"
+      "Problem Solver"
     ]
   },
-  "skills": [".NET", "React", "Vue", "Node.js", "TypeScript", "JavaScript", "C#", "SQL"],
+  "skills": [
+    {
+      "name": "C#",
+      "image": "/svg/csharp.svg"
+    },
+    {
+      "name": ".NET",
+      "image": "/svg/dotnet.svg"
+    },
+    {
+      "name": "TypeScript",
+      "image": "/svg/ts.svg"
+    },
+    {
+      "name": "JavaScript",
+      "image": "/svg/js.svg"
+    },
+    {
+      "name": "NodeJS",
+      "image": "/svg/node.svg"
+    },
+    {
+      "name": "NestJS",
+      "image": "/svg/nest.svg"
+    },
+    {
+      "name": "NextJS",
+      "image": "/svg/next.svg"
+    },
+    {
+      "name": "React",
+      "image": "/svg/react.svg"
+    },
+    {
+      "name": "Vue",
+      "image": "/svg/vue.svg"
+    },
+    {
+      "name": "PostgreSQL",
+      "image": "/svg/postgre.svg"
+    },
+    {
+      "name": "SQL Server",
+      "image": "/svg/mssql.svg"
+    },
+    {
+      "name": "SCSS",
+      "image": "/svg/scss.svg"
+    },
+    {
+      "name": "TailwindCSS",
+      "image": "/svg/tailwind.svg"
+    },
+    {
+      "name": "Git",
+      "image": "/svg/git.svg"
+    }
+  ],
   "experiences": [
     {
       "company": "Gakk Media (BD) Ltd.",

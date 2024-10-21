@@ -3,11 +3,12 @@
 import { ReactNode, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
 
-const NavItem = ({ children, onClick }: { children: ReactNode; onClick?: () => void }) => (
-  <li className="text-gray-400 hover:text-white cursor-pointer" onClick={onClick}>
+const NavItem = ({ children, href }: { children: ReactNode; href: string }) => (
+  <Link className="text-gray-400 hover:text-white cursor-pointer" href={href}>
     {children}
-  </li>
+  </Link>
 );
 
 export const Header = () => {
@@ -15,12 +16,12 @@ export const Header = () => {
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
   return (
-    <header className="py-6 px-4 sm:px-6 lg:px-8 flex justify-between items-center relative">
+    <header className="md:fixed top-0 left-0 right-0 z-10 bg-slate-800 py-6 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
       <div className="text-2xl font-bold"></div>
       <nav className="hidden md:block">
         <ul className="flex space-x-6">
-          <NavItem>About</NavItem>
-          <NavItem>Work</NavItem>
+          <NavItem href="#about">About</NavItem>
+          <NavItem href="#projects">Projects</NavItem>
         </ul>
       </nav>
       <Button variant="outline" className="hidden md:inline-flex bg-blue-600 text-white hover:bg-blue-700">
@@ -32,9 +33,9 @@ export const Header = () => {
       {mobileMenuOpen && (
         <div className="absolute top-full left-0 right-0 bg-gray-800 p-4 md:hidden">
           <ul className="space-y-2">
-            <NavItem onClick={toggleMobileMenu}>About</NavItem>
-            <NavItem onClick={toggleMobileMenu}>Work</NavItem>
-            <NavItem onClick={toggleMobileMenu}>Contact</NavItem>
+            <NavItem href="#about">About</NavItem>
+            <NavItem href="#projects">Projects</NavItem>
+            {/* <NavItem onClick={toggleMobileMenu}>Contact</NavItem> */}
           </ul>
           <Button variant="outline" className="w-full mt-4 bg-blue-600 text-white hover:bg-blue-700">
             Contact

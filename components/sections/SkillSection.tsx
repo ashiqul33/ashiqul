@@ -1,13 +1,32 @@
 import { SectionTitle } from "@/components/SectionTitle";
-import { SkillIcon } from "@/components/SkillIcon";
+import Image from "next/image";
 
-export const SkillSection = ({ skills }: { skills: string[] }) => (
-  <section className="py-12 md:py-20">
-    <SectionTitle>Skills</SectionTitle>
-    <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4 md:gap-6">
-      {skills.map((skill) => (
-        <SkillIcon key={skill} skill={skill} />
-      ))}
+type skillType = {
+  name: string;
+  image: string;
+}
+
+export const SkillSection = ({ skills }: { skills: skillType[] }) => (
+  <section className="py-16 md:py-24">
+    <div className="container mx-auto text-center">
+      <SectionTitle>Skills</SectionTitle>
+      <h3 className="text-xl mb-8 text-gray-300">The skills, tools and technologies I am really good at:</h3>
+      <div className="flex flex-wrap justify-center items-center md:gap-20 gap-12">
+        {skills.map((skill, index) => (
+          <div key={index} className="flex flex-col items-center w-20">
+            <Image src={skill.image} alt={skill.name} width={60} height={60} className="object-cover" />
+            <span className="mt-2 text-sm text-gray-400 text-center">{skill.name}</span>
+          </div>
+        ))}
+      </div>
+      {/* <div className="grid grid-cols-3 items-center sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 gap-6 md:gap-8">
+        {skills.map((skill, index) => (
+          <div key={index} className="flex flex-col items-center">
+            <Image src={skill.image} alt={skill.name} width={60} height={60} className="object-cover" />
+            <span className="mt-2 text-sm text-gray-400">{skill.name}</span>
+          </div>
+        ))}
+      </div> */}
     </div>
   </section>
 );
