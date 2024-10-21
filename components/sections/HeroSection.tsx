@@ -40,16 +40,16 @@ export const HeroSection = ({ nickName, title, email, github, linkedin, image, n
         </Button>
       </div>
     </div>
-    <div className="md:w-1/3 flex justify-center">
+    <div className="md:w-1/3 hidden md:flex justify-center">
       <div className="relative">
         <Image
           src={image}
           alt={name}
           width={300}
           height={300}
-          className="rounded-lg object-cover"
+          className="rounded object-cover"
         />
-        <div className="absolute -bottom-4 -right-4 w-full h-full border-4 border-white rounded-lg -z-10"></div>
+        <div className="absolute -bottom-7 -right-7 w-full h-full border-r-20 border-b-20 border-gray-600"></div>
       </div>
     </div>
   </section>

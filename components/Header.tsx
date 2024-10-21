@@ -21,6 +21,8 @@ export const Header = () => {
       <nav className="hidden md:block">
         <ul className="flex space-x-6">
           <NavItem href="#about">About</NavItem>
+          <NavItem href="#skills">Skills</NavItem>
+          <NavItem href="#experiences">Experiences</NavItem>
           <NavItem href="#projects">Projects</NavItem>
         </ul>
       </nav>
