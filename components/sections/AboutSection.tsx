@@ -15,7 +15,7 @@ export const AboutSection = ({ about, image }: { about: { description: string[];
             </div>
           </div>
           <div className="md:w-1/2 md:pl-10">
-            <h2 className="text-4xl font-bold text-white mb-6">Curious about me? Here you have it:</h2>
+            <h2 className="text-4xl font-bold text-white my-6">Curious about me? Here you have it:</h2>
             {description.map((paragraph, index) => (
               <p key={index} className="text-gray-300 mb-6">
                 {paragraph}
