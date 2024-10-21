@@ -11,12 +11,12 @@ export type experienceType = {
 
 export const ExperienceCard = ({ role, company, period, responsibilities, logo }: experienceType) => (
   <Card className="bg-gray-800 border-gray-700 mb-6">
-    <CardContent className="p-6 flex">
-      <div className="flex mr-6">
+    <CardContent className="p-6 md:flex">
+      <div className="hidden md:flex mr-6">
         <Image src={logo} alt={company} width={200} height={50} className="object-contain" />
       </div>
       <div className="flex-grow">
-        <div className="flex justify-between items-start mb-2">
+        <div className="md:flex md:justify-between items-start mb-4">
           <div>
             <h3 className="text-xl font-semibold text-white">{role}</h3>
             <p className="text-green-500">{company}</p>
