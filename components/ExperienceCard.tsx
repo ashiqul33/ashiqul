@@ -6,24 +6,29 @@ export type experienceType = {
   company: string;
   period: string;
   responsibilities: string[];
+  logo: string;
 };
 
-export const ExperienceCard = ({ role, company, period, responsibilities }: experienceType) => (
+export const ExperienceCard = ({ role, company, period, responsibilities, logo }: experienceType) => (
   <Card className="bg-gray-800 border-gray-700 mb-6">
-    <CardContent className="p-6">
-      <div className="flex items-center mb-4">
-        <Image src="/placeholder.svg?height=60&width=60&text=Upwork" alt={company} width={60} height={60} className="mr-4" />
-        <div>
-          <h3 className="text-xl font-semibold text-white">{role}</h3>
-          <p className="text-green-500">{company}</p>
+    <CardContent className="p-6 flex">
+      <div className="flex mr-6">
+        <Image src={logo} alt={company} width={200} height={50} className="object-contain" />
+      </div>
+      <div className="flex-grow">
+        <div className="flex justify-between items-start mb-2">
+          <div>
+            <h3 className="text-xl font-semibold text-white">{role}</h3>
+            <p className="text-green-500">{company}</p>
+          </div>
           <p className="text-gray-400">{period}</p>
         </div>
+        <ul className="list-disc pl-5 space-y-1 text-gray-300">
+          {responsibilities.map((resp, idx) => (
+            <li key={idx}>{resp}</li>
+          ))}
+        </ul>
       </div>
-      <ul className="list-disc pl-5 space-y-1 text-gray-300">
-        {responsibilities.map((resp, idx) => (
-          <li key={idx}>{resp}</li>
-        ))}
-      </ul>
     </CardContent>
   </Card>
 );

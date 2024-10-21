@@ -2,7 +2,7 @@
   "name": "Mohammad Ashiqul Islam",
   "shortDescription": "I'm a software engineer with expertise in c#, .NET, JavaScript, NodeJS, and RESTful APIs",
   "nickName": "Ashiqul",
-  "title": "Software Engineer & Full-Stack Developer",
+  "title": "I am a .NET developer with experience in both back-end and front-end development. Strong engineering skills in C#, JavaScript, NodeJs, SQL Server, and object oriented design.",
   "email": "ashiqul33@gmail.com",
   "github": "https://github.com/ashiqul33",
   "linkedin": "https://www.linkedin.com/in/mdashiqulislam",
@@ -88,7 +88,8 @@
         "Developed RESTful APIs using .NET, Entity Framework, and SQL Server",
         "Designed and implemented frontend using NextJS",
         "Integrated payment APIs including Nagad and bKash"
-      ]
+      ],
+      "logo": "/img/gakk-media.png"
     },
     {
       "company": "Daniyal Technologies",
@@ -98,7 +99,8 @@
         "Developed API using NestJS, TypeORM, and MySQL",
         "Implemented fast search functionality using Elastic NoSQL database",
         "Designed frontend using NextJS and Vue"
-      ]
+      ],
+      "logo": "/img/daniyal.webp"
     },
     {
       "company": "Computer Ease Limited",
@@ -108,7 +110,8 @@
         "Migrated .NET application and database to Azure Services",
         "Developed enterprise software for various companies",
         "Implemented system designs and fixed bugs"
-      ]
+      ],
+      "logo": "/img/cel.webp"
     }
   ],
   "projects": [

@@ -33,7 +33,7 @@ export const Footer = ({ email, github, linkedin, name }: footerType) => {
             </a>
           </Button>
         </div>
-        <p className="text-gray-500">&copy; 2024 {name}. All rights reserved.</p>
+        <p className="text-gray-500">&copy; {new Date().getFullYear()} {name}. All rights reserved.</p>
       </div>
     </footer>
   );
