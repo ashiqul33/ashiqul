@@ -19,6 +19,7 @@ export default function Home() {
           linkedin={portfolio.linkedin}
           image={portfolio.image}
           name={portfolio.name}
+          location={portfolio.location}
         />
         <AboutSection about={portfolio.about}  image={portfolio.imageAbout} />
         <SkillSection skills={portfolio.skills} />

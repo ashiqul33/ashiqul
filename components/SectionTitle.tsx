@@ -1,5 +1,9 @@
 import { ReactNode } from 'react'
 
 export const SectionTitle = ({ children }: { children: ReactNode }) => (
-  <h2 className="text-2xl font-bold text-white mb-6">{children}</h2>
+  <div className="flex justify-center mb-8">
+    <h2 className="inline-block text-sm font-bold text-white px-4 py-2 bg-gray-700 rounded-full">
+      {children}
+    </h2>
+  </div>
 );
