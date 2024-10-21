@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 
-type experienceType = {
+export type experienceType = {
   role: string;
   company: string;
   period: string;

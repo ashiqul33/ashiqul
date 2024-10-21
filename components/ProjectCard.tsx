@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
-type projectType = {
+export type projectType = {
   title: string;
   description: string;
   image: string;
