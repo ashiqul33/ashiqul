@@ -1,19 +1,21 @@
 {
   "name": "Mohammad Ashiqul Islam",
+  "shortDescription": "I'm a software engineer with expertise in c#, .NET, JavaScript, NodeJS, and RESTful APIs",
   "nickName": "Ashiqul",
   "title": "Senior Software Engineer & Full-Stack Developer",
   "email": "ashiqul33@gmail.com",
   "github": "https://github.com/ashiqul33",
   "linkedin": "https://www.linkedin.com/in/mdashiqulislam",
-  "image": "/img/mohammad-ashiqul-islam.png",
+  "image": "/img/mohammad-ashiqul-islam.webp",
+  "imageAbout": "/img/ashiqul-islam.webp",
   "about": {
     "description": [
-      "I'm a senior software engineer with expertise in JavaScript, NodeJS, and RESTful APIs. I'm passionate about creating scalable backend systems and contributing to dynamic projects that push the boundaries of what's possible in web development.",
+      "I'm a software engineer with expertise in JavaScript, NodeJS, and RESTful APIs. I'm passionate about creating scalable backend systems and contributing to dynamic projects that push the boundaries of what's possible in web development.",
       "When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying a good cup of coffee while brainstorming innovative solutions to complex problems."
     ]
   },
   "skills": [".NET", "React", "Vue", "Node.js", "TypeScript", "JavaScript", "C#", "SQL"],
-  "experience": [
+  "experiences": [
     {
       "company": "Gakk Media (BD) Ltd.",
       "role": "Sr. Software Engineer",
