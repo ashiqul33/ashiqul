@@ -10,7 +10,7 @@ export type experienceType = {
 };
 
 export const ExperienceCard = ({ role, company, period, responsibilities, logo }: experienceType) => (
-  <Card className="md:w-3/5 bg-gray-800 border-gray-700 mb-6">
+  <Card className="md:w-2/3 bg-gray-800 border-gray-700 mb-6">
     <CardContent className="p-6 md:flex">
       <div className="hidden md:flex mr-6">
         <Image src={logo} alt={company} width={200} height={50} className="object-contain" />
