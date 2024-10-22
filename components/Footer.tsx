@@ -23,7 +23,7 @@ export const Footer = ({ email, phone, github, linkedin, name }: FooterProps) =>
           Get in touch
         </p>
         <p className="mb-8 font-thin">
-          What's next? Feel free to reach out to me if you're looking for<br />
+          What&apos;s next? Feel free to reach out to me if you&apos;re looking for<br />
           a developer, have a query, or simply want to connect.
         </p>
         <div className="flex flex-col items-center space-y-4 mb-8">
