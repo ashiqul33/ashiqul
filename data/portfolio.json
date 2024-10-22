@@ -132,6 +132,31 @@
       "link": "https://myplay.games"
     },
     {
+      "title": "Online Sales and Distribution System (OSDS)",
+      "description": "OSDS is the most popular secondary sales and distribution system in Bangladesh, featuring a complex and fully dynamic promotion and incentive module. This comprehensive system covers all aspects of secondary sales and related supply chain business requirements.",
+      "points": [
+        "Developed a robust system capable of handling complex business logic for sales, distribution, and supply chain management.",
+        "Implemented dynamic promotion and incentive modules, allowing for flexible and customizable business strategies.",
+        "Integrated various services including REST, SOAP and SSRS to create a comprehensive solution.",
+        "Utilized Windows Service for background processing and task automation."
+      ],
+      "image": "/project/osds.webp",
+      "tags": ["C#", "JavaScript", "ASP.NET", "Telerik", "SQL Server"],
+      "link": "https://arlacompass.azurewebsites.net/flogin"
+    },
+    {
+      "title": "TradeTrack (Point of Sale System)",
+      "description": "TradeTrack is a small business Point of Sale (POS) system that I developed. The project showcases a <b>robust architecture</b> with a backend built on the .NET Framework, implementing <b>Clean Architecture principles</b>.",
+      "points": [
+        "Implemented the CQRS (Command Query Responsibility Segregation) pattern in the backend, enhancing separation of concerns.",
+        "Utilized the MediatR library to effectively manage commands and queries, facilitating the CQRS implementation.",
+        "Adopted the repository pattern to abstract the data access layer, improving maintainability and flexibility."
+      ],
+      "image": "/project/tradetrack.webp",
+      "tags": ["C#", ".NET", "SQL Server", "Entity Framework", "CQRS", "Clean Architecture"],
+      "link": ""
+    },
+    {
       "title": "HGS Hydro Shop",
       "description": "HGS Hydro Shop, a leading indoor gardening supply company in the USA, provides premium hydroponics equipment and products. We take pride in developing and maintaining their <b>robust ecommerce</b> system.",
       "image": "/project/hgs.webp",
