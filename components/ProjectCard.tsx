@@ -4,7 +4,6 @@ import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 
 export type projectType = {
-  index: number;
   title: string;
   description: string;
   image: string;
@@ -13,9 +12,9 @@ export type projectType = {
   points?: string[];
 };
 
-export const ProjectCard = ({ project }: { project: projectType }) => (
+export const ProjectCard = ({ project, index }: { project: projectType; index: number }) => (
   <Card className="bg-gray-800 border-gray-700 flex flex-col md:flex-row">
-    <CardContent className={`bg-gray-600 p-0 flex-1 ${(project.index & 1) === 0 ? "order-first rounded-s-xl" : "order-last rounded-e-xl"}`}>
+    <CardContent className={`bg-gray-600 p-0 flex-1 ${(index & 1) === 0 ? "order-first rounded-s-xl" : "order-last rounded-e-xl"}`}>
       <Image src={project.image} alt={project.title} width={400} height={0} className="w-full p-8 object-cover" />
     </CardContent>
     <CardContent className="p-6 flex-1">

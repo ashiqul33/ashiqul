@@ -5,7 +5,6 @@ import { AboutSection } from "@/components/sections/AboutSection";
 import { SkillSection } from "@/components/sections/SkillSection";
 import { ExperienceSection } from "@/components/sections/ExperienceSection";
 import { ProjectSection } from "@/components/sections/ProjectSection";
-import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -26,7 +25,6 @@ export default function Home() {
         <ExperienceSection experiences={portfolio.experiences} />
         <ProjectSection projects={portfolio.projects} />
       </main>
-      <Footer email={portfolio.email} github={portfolio.github} linkedin={portfolio.linkedin} name={portfolio.name} />
     </div>
   );
 }

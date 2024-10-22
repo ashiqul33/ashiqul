@@ -1,35 +1,57 @@
-import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail } from "lucide-react";
+"use client"
 
-type footerType = {
+import { Button } from "@/components/ui/button";
+import { Github, Linkedin, Mail, Phone, Copy } from "lucide-react";
+
+type FooterProps = {
   email: string;
+  phone: string;
   github: string;
   linkedin: string;
   name: string;
 };
 
-export const Footer = ({ email, github, linkedin, name }: footerType) => {
+export const Footer = ({ email, phone, github, linkedin, name }: FooterProps) => {
+  const handleCopy = (text: string) => {
+    navigator.clipboard.writeText(text);
+  };
+
   return (
-    <footer className="bg-gray-800 py-10">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p className="text-gray-400 mb-4">Let&apos;s work together on your next project</p>
-        <Button variant="outline" className="bg-blue-600 text-white hover:bg-blue-700 mb-6">
+    <footer className="bg-gray-800 py-16 text-white">
+      <div className="flex flex-col items-center mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p className="mb-8 w-40 font- text-white font-thin py-1 bg-gray-600 rounded-full">
           Get in touch
-        </Button>
-        <div className="flex justify-center space-x-4 mb-6">
-          <Button variant="outline" size="icon" asChild>
-            <a href={`mailto:${email}`} aria-label="Email">
-              <Mail className="h-5 w-5" />
-            </a>
-          </Button>
-          <Button variant="outline" size="icon" asChild>
+        </p>
+        <p className="text-xl mb-8">
+          What's next? Feel free to reach out to me if you're looking for<br />
+          a developer, have a query, or simply want to connect.
+        </p>
+        <div className="flex flex-col items-center space-y-4 mb-8">
+          <div className="flex items-center">
+            <Mail className="h-6 w-6 mr-2" />
+            <span className="text-xl">{email}</span>
+            <Button variant="ghost" size="icon" onClick={() => handleCopy(email)} className="ml-2">
+              <Copy className="h-4 w-4" />
+            </Button>
+          </div>
+          <div className="flex items-center">
+            <Phone className="h-6 w-6 mr-2" />
+            <span className="text-xl">{phone}</span>
+            <Button variant="ghost" size="icon" onClick={() => handleCopy(phone)} className="ml-2">
+              <Copy className="h-4 w-4" />
+            </Button>
+          </div>
+        </div>
+        <p className="text-gray-400 mb-4">You may also find me on these platforms!</p>
+        <div className="flex justify-center space-x-4">
+          <Button variant="ghost" size="icon" asChild>
             <a href={github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <Github className="h-5 w-5" />
+              <Github className="h-6 w-6" />
             </a>
           </Button>
-          <Button variant="outline" size="icon" asChild>
+          <Button variant="ghost" size="icon" asChild>
             <a href={linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <Linkedin className="h-5 w-5" />
+              <Linkedin className="h-6 w-6" />
             </a>
           </Button>
         </div>
