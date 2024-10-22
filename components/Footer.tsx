@@ -28,16 +28,16 @@ export const Footer = ({ email, phone, github, linkedin, name }: FooterProps) =>
         </p>
         <div className="flex flex-col items-center space-y-4 mb-8">
           <div className="flex items-center">
-            <Mail className="h-6 w-6 mr-4" />
+            <Mail className="h-6 w-6 mr-2" />
             <span className="text-3xl">{email}</span>
-            <Button variant="ghost" size="icon" onClick={() => handleCopy(email)} className="ml-4">
+            <Button variant="ghost" size="icon" onClick={() => handleCopy(email)} className="ml-2">
               <Copy className="h-4 w-4" />
             </Button>
           </div>
           <div className="flex items-center">
-            <Phone className="h-6 w-6 mr-4" />
+            <Phone className="h-6 w-6 mr-2" />
             <span className="text-3xl">{phone}</span>
-            <Button variant="ghost" size="icon" onClick={() => handleCopy(phone)} className="ml-4">
+            <Button variant="ghost" size="icon" onClick={() => handleCopy(phone)} className="ml-2">
               <Copy className="h-4 w-4" />
             </Button>
           </div>
