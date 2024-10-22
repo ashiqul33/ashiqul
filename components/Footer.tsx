@@ -22,22 +22,22 @@ export const Footer = ({ email, phone, github, linkedin, name }: FooterProps) =>
         <p className="mb-8 w-40 font- text-white font-thin py-1 bg-gray-600 rounded-full">
           Get in touch
         </p>
-        <p className="text-xl mb-8">
+        <p className="mb-8 font-thin">
           What's next? Feel free to reach out to me if you're looking for<br />
           a developer, have a query, or simply want to connect.
         </p>
         <div className="flex flex-col items-center space-y-4 mb-8">
           <div className="flex items-center">
-            <Mail className="h-6 w-6 mr-2" />
-            <span className="text-xl">{email}</span>
-            <Button variant="ghost" size="icon" onClick={() => handleCopy(email)} className="ml-2">
+            <Mail className="h-6 w-6 mr-4" />
+            <span className="text-3xl">{email}</span>
+            <Button variant="ghost" size="icon" onClick={() => handleCopy(email)} className="ml-4">
               <Copy className="h-4 w-4" />
             </Button>
           </div>
           <div className="flex items-center">
-            <Phone className="h-6 w-6 mr-2" />
-            <span className="text-xl">{phone}</span>
-            <Button variant="ghost" size="icon" onClick={() => handleCopy(phone)} className="ml-2">
+            <Phone className="h-6 w-6 mr-4" />
+            <span className="text-3xl">{phone}</span>
+            <Button variant="ghost" size="icon" onClick={() => handleCopy(phone)} className="ml-4">
               <Copy className="h-4 w-4" />
             </Button>
           </div>
@@ -55,7 +55,7 @@ export const Footer = ({ email, phone, github, linkedin, name }: FooterProps) =>
             </a>
           </Button>
         </div>
-        <p className="text-gray-500">&copy; {new Date().getFullYear()} {name}. All rights reserved.</p>
+        <p className="text-gray-500 mt-6">&copy; {new Date().getFullYear()} {name}. All rights reserved.</p>
       </div>
     </footer>
   );

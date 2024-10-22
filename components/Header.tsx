@@ -26,8 +26,10 @@ export const Header = () => {
           <NavItem href="#projects">Projects</NavItem>
         </ul>
       </nav>
-      <Button variant="outline" className="hidden md:inline-flex bg-blue-600 text-white hover:bg-blue-700">
-        Contact
+      <Button variant="default" className="hidden md:inline-flex rounded-xl text-black font-bold">
+        <Link href="/file/Mohammad_Ashiqul_Islam.pdf" target="_blank" rel="noopener noreferrer">
+          Download CV
+        </Link>
       </Button>
       <Button variant="ghost" className="md:hidden" onClick={toggleMobileMenu}>
         {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -36,11 +38,12 @@ export const Header = () => {
         <div className="absolute top-full left-0 right-0 bg-gray-800 p-4 md:hidden">
           <ul className="space-y-2">
             <NavItem href="#about">About</NavItem>
+            <NavItem href="#skills">Skills</NavItem>
+            <NavItem href="#experiences">Experiences</NavItem>
             <NavItem href="#projects">Projects</NavItem>
-            {/* <NavItem onClick={toggleMobileMenu}>Contact</NavItem> */}
           </ul>
-          <Button variant="outline" className="w-full mt-4 bg-blue-600 text-white hover:bg-blue-700">
-            Contact
+          <Button variant="default" className="hidden md:inline-flex rounded-xl text-black font-bold">
+            Download CV
           </Button>
         </div>
       )}
