@@ -4,7 +4,7 @@ import { SectionTitle } from "@/components/SectionTitle";
 export const AboutSection = ({ about, image }: { about: { description: string[]; quickFacts: string[] }; image: string }) => {
   const { description, quickFacts } = about;
   return (
-    <section className="bg-gray-900 py-12 md:py-24">
+    <section className="bg-gray-900 py-12 md:py-24" id="about">
       <div className="container mx-auto px-4">
         <SectionTitle>About me</SectionTitle>
         <div className="flex flex-col items-start md:flex-row">

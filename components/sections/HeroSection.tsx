@@ -14,7 +14,7 @@ type HeroType = {
 };
 
 export const HeroSection = ({ nickName, title, email, github, linkedin, image, name, location }: HeroType) => (
-  <section className="flex flex-col items-center justify-between py-12 md:mt-14 md:flex-row md:py-20" id="about">
+  <section className="flex flex-col items-center justify-between py-12 md:mt-14 md:flex-row md:py-20">
     <div className="mb-8 md:mb-0 md:w-1/2">
       <h1 className="mb-2 text-4xl font-bold md:text-5xl">Hi, I&apos;m {nickName} 👋</h1>
       <p className="mb-6 text-lg text-gray-400 md:text-xl">{title}</p>
