@@ -14,12 +14,12 @@ type HeroType = {
 };
 
 export const HeroSection = ({ nickName, title, email, github, linkedin, image, name, location }: HeroType) => (
-  <section className="md:mt-14 py-12 md:py-20 flex flex-col md:flex-row items-center justify-between" id="about">
-    <div className="md:w-1/2 mb-8 md:mb-0">
-      <h1 className="text-4xl md:text-5xl font-bold mb-2">Hi, I&apos;m {nickName} 👋</h1>
-      <p className="text-lg md:text-xl text-gray-400 mb-6">{title}</p>
-      <div className="flex items-center text-gray-400 mb-8">
-        <MapPin className="h-5 w-5 mr-2" />
+  <section className="flex flex-col items-center justify-between py-12 md:mt-14 md:flex-row md:py-20" id="about">
+    <div className="mb-8 md:mb-0 md:w-1/2">
+      <h1 className="mb-2 text-4xl font-bold md:text-5xl">Hi, I&apos;m {nickName} 👋</h1>
+      <p className="mb-6 text-lg text-gray-400 md:text-xl">{title}</p>
+      <div className="mb-8 flex items-center text-gray-400">
+        <MapPin className="mr-2 h-5 w-5" />
         <span>{location}</span>
       </div>
       <div className="flex space-x-4">
@@ -40,16 +40,10 @@ export const HeroSection = ({ nickName, title, email, github, linkedin, image, n
         </Button>
       </div>
     </div>
-    <div className="md:w-1/3 hidden md:flex justify-center">
+    <div className="hidden justify-center md:flex md:w-1/3">
       <div className="relative">
-        <Image
-          src={image}
-          alt={name}
-          width={300}
-          height={300}
-          className="rounded object-cover"
-        />
-        <div className="absolute -bottom-7 -right-7 w-full h-full border-r-20 border-b-20 border-gray-600"></div>
+        <Image src={image} alt={name} width={300} height={300} className="rounded object-cover" />
+        <div className="absolute -bottom-7 -right-7 h-full w-full border-b-20 border-r-20 border-gray-600"></div>
       </div>
     </div>
   </section>

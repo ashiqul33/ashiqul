@@ -20,7 +20,7 @@ export default function Home() {
           name={portfolio.name}
           location={portfolio.location}
         />
-        <AboutSection about={portfolio.about}  image={portfolio.imageAbout} />
+        <AboutSection about={portfolio.about} image={portfolio.imageAbout} />
         <SkillSection skills={portfolio.skills} />
         <ExperienceSection experiences={portfolio.experiences} />
         <ProjectSection projects={portfolio.projects} />

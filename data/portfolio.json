@@ -15,12 +15,7 @@
       "I'm a software engineer with expertise in JavaScript, NodeJS, and RESTful APIs. I'm passionate about creating scalable backend systems and contributing to dynamic projects that push the boundaries of what's possible in web development.",
       "When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying a good cup of coffee while brainstorming innovative solutions to complex problems."
     ],
-    "quickFacts": [
-      "B.Sc in Computer Science Engineering",
-      "Full Stack Developer",
-      "Quick Learner",
-      "Problem Solver"
-    ]
+    "quickFacts": ["B.Sc in Computer Science Engineering", "Full Stack Developer", "Quick Learner", "Problem Solver"]
   },
   "skills": [
     {
@@ -122,13 +117,7 @@
       "title": "Online Exam System",
       "description": "This platform functions as an online examination system, providing users with the option to take both <b>multiple-choice and written exams</b>. Once a participant finishes an exam, they can view a results page that presents comprehensive question details, along with a <b>leaderboard</b> highlighting the top achievers. Users also have the opportunity to engage in practice exams and access real-time result updates.",
       "image": "/project/online-exam.webp",
-      "tags": [
-        "TypeScript",
-        "NestJS",
-        "NextJS",
-        "PostgreSQL",
-        "Bootstrap"
-      ],
+      "tags": ["TypeScript", "NestJS", "NextJS", "PostgreSQL", "Bootstrap"],
       "link": "https://t.ly/Pt6WM"
     },
     {
@@ -139,26 +128,14 @@
         "Designed and implemented a responsive and user-friendly frontend interface using React and Ant Design, enhancing the user experience."
       ],
       "image": "/project/my-play.webp",
-      "tags": [
-        "C#",
-        ".Net 6",
-        "JavaScript",
-        "ReactJS",
-        "SQL Server"
-      ],
+      "tags": ["C#", ".Net 6", "JavaScript", "ReactJS", "SQL Server"],
       "link": "https://myplay.games"
     },
     {
       "title": "HGS Hydro Shop",
       "description": "HGS Hydro Shop, a leading indoor gardening supply company in the USA, provides premium hydroponics equipment and products. We take pride in developing and maintaining their <b>robust ecommerce</b> system.",
       "image": "/project/hgs.webp",
-      "tags": [
-        "JavaScript",
-        "NestJS",
-        "NuxtJS",
-        "MySQL",
-        "Bootstrap"
-      ],
+      "tags": ["JavaScript", "NestJS", "NuxtJS", "MySQL", "Bootstrap"],
       "link": "https://hgshydro.com"
     }
   ]
