@@ -15,7 +15,7 @@ export type projectType = {
 export const ProjectCard = ({ project, index }: { project: projectType; index: number }) => (
   <Card className="bg-gray-800 border-gray-700 flex flex-col md:flex-row">
     <CardContent className={`bg-gray-600 p-0 flex-1 order-first rounded-t-xl sm:rounded-none ${(index & 1) === 0 ? "md:order-first md:rounded-s-xl" : "md:order-last md:rounded-e-xl"}`}>
-      <Image src={project.image} alt={project.title} width={400} height={0} className="w-full p-8 object-cover" />
+      <Image src={project.image} alt={project.title} width={400} height={0} className="w-full p-2 md:p-8 object-cover" />
     </CardContent>
     <CardContent className="p-6 flex-1">
       <h3 className="text-2xl font-semibold text-white mb-2">{project.title}</h3>
