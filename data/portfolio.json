@@ -119,21 +119,46 @@
   "projects": [
     {
       "title": "Online Exam System",
-      "description": "An online examination system for multiple-choice and written exams with result viewing and leaderboard features.",
-      "image": "/placeholder.svg?height=200&width=400&text=Online+Exam+System",
-      "tags": ["TypeScript", "NestJS", "NextJS", "PostgreSQL"]
+      "description": "This platform functions as an online examination system, providing users with the option to take both <b>multiple-choice and written exams</b>. Once a participant finishes an exam, they can view a results page that presents comprehensive question details, along with a <b>leaderboard</b> highlighting the top achievers. Users also have the opportunity to engage in practice exams and access real-time result updates.",
+      "image": "/project/online-exam.webp",
+      "tags": [
+        "TypeScript",
+        "NestJS",
+        "NextJS",
+        "PostgreSQL",
+        "Bootstrap"
+      ],
+      "link": "https://t.ly/Pt6WM"
+    },
+    {
+      "title": "MyPlay Game",
+      "description": "MyPlay Games is an online platform where users can subscribe and play various games. The project involved developing a robust backend API and an interactive frontend interface.",
+      "points": [
+        "Successfully developed and deployed a scalable API using .Net 6, ensuring smooth and efficient game interactions.",
+        "Designed and implemented a responsive and user-friendly frontend interface using React and Ant Design, enhancing the user experience."
+      ],
+      "image": "/project/my-play.webp",
+      "tags": [
+        "C#",
+        ".Net 6",
+        "JavaScript",
+        "ReactJS",
+        "SQL Server"
+      ],
+      "link": "https://myplay.games"
     },
     {
       "title": "HGS Hydro Shop",
-      "description": "E-commerce system for a leading indoor gardening supply company in the USA.",
-      "image": "/placeholder.svg?height=200&width=400&text=HGS+Hydro+Shop",
-      "tags": ["JavaScript", "NestJS", "NuxtJS", "MySQL"]
-    },
-    {
-      "title": "My Play Game",
-      "description": "Online platform for game subscriptions with robust backend API and interactive frontend.",
-      "image": "/placeholder.svg?height=200&width=400&text=My+Play+Game",
-      "tags": ["JavaScript", ".Net 6", "ReactJS", "SQL Server"]
+      "description": "HGS Hydro Shop, a leading indoor gardening supply company in the USA, provides premium hydroponics equipment and products. We take pride in developing and maintaining their <b>robust ecommerce</b> system.",
+      "image": "/project/hgs.webp",
+      "tags": [
+        "JavaScript",
+        "NestJS",
+        "NuxtJS",
+        "MySQL",
+        "Bootstrap"
+      ],
+      "link": "https://hgshydro.com"
     }
   ]
 }
