@@ -118,7 +118,14 @@
       "description": "This platform functions as an online examination system, providing users with the option to take both <b>multiple-choice and written exams</b>. Once a participant finishes an exam, they can view a results page that presents comprehensive question details, along with a <b>leaderboard</b> highlighting the top achievers. Users also have the opportunity to engage in practice exams and access real-time result updates.",
       "image": "/project/online-exam.webp",
       "tags": ["TypeScript", "NestJS", "NextJS", "PostgreSQL", "Bootstrap"],
-      "link": "https://t.ly/Pt6WM"
+      "link": "https://t.ly/Pt6WM",
+      "points": [
+        "Developed a robust backend API using NestJS and TypeScript, ensuring efficient exam management and result processing.",
+        "Implemented a responsive frontend with NextJS, providing an intuitive user interface for exam-taking and result viewing.",
+        "Integrated PostgreSQL for secure and scalable data storage, handling user information, exam data, and results.",
+        "Designed and implemented a real-time leaderboard system, enhancing user engagement and competitiveness.",
+        "Created a flexible exam creation system supporting both multiple-choice and written question types."
+      ]
     },
     {
       "title": "MyPlay Game",
