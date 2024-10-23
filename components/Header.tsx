@@ -1,6 +1,7 @@
 "use client";
 
-import { ReactNode, useState } from "react";
+import Image from "next/image";
+import { ReactNode, useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
@@ -13,11 +14,35 @@ const NavItem = ({ children, href }: { children: ReactNode; href: string }) => (
 
 export const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
+
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
+
+  useEffect(() => {
+    const handleOutsideClick = (event: MouseEvent) => {
+      if (mobileMenuOpen && mobileMenuRef.current && !mobileMenuRef.current.contains(event.target as Node)) {
+        setMobileMenuOpen(false);
+      }
+    };
+
+    const handleScroll = () => {
+      mobileMenuOpen && setMobileMenuOpen(false);
+    };
+
+    document.addEventListener("mousedown", handleOutsideClick);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [mobileMenuOpen]);
 
   return (
     <header className="relative left-0 right-0 top-0 z-10 flex items-center justify-between px-4 py-6 sm:px-6 md:fixed md:bg-slate-800 lg:px-8">
-      <div className="text-2xl font-bold"></div>
+      <Link href="/">
+        <Image src="/img/favicon.ico" alt="Mohammad Ashiqul Islam" width="30" height="20" />
+      </Link>
       <nav className="hidden md:block">
         <ul className="flex space-x-6">
           <NavItem href="#about">About</NavItem>
@@ -26,13 +51,16 @@ export const Header = () => {
           <NavItem href="#projects">Projects</NavItem>
         </ul>
       </nav>
-      <Button variant="default" className="hidden rounded-xl font-bold text-black md:inline-flex">
+      <Button variant="default" className="hidden rounded-xl font-bold text-black md:block">
         <Link href="/file/Mohammad_Ashiqul_Islam.pdf" target="_blank" rel="noopener noreferrer">
           Download CV
         </Link>
       </Button>
       {mobileMenuOpen ? (
-        <div className="translateX(100%) absolute right-0 top-0 flex w-52 bg-gray-800/90 p-4 transition-transform duration-300 ease-in-out md:hidden">
+        <div
+          ref={mobileMenuRef}
+          className="translateX(100%) absolute right-0 top-0 flex w-52 bg-gray-800/90 p-4 transition-transform duration-300 ease-in-out md:hidden"
+        >
           <div>
             <ul className="space-y-2">
               <li>
