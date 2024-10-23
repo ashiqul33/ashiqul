@@ -14,7 +14,7 @@ type HeroType = {
 };
 
 export const HeroSection = ({ nickName, title, email, github, linkedin, image, name, location }: HeroType) => (
-  <section className="container mx-auto flex flex-col items-center justify-between px-4 py-12 sm:px-6 md:mt-14 md:flex-row md:py-20 lg:px-8">
+  <section className="container mx-auto mt-14 flex flex-col items-center justify-between px-4 py-12 sm:px-6 md:flex-row md:py-20 lg:px-8">
     <div className="mb-20 flex justify-center md:order-last md:mb-0 md:w-1/3">
       <div className="relative">
         <Image src={image} alt={name} width={300} height={300} className="rounded object-cover" />

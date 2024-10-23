@@ -41,7 +41,7 @@ export const Header = () => {
   }, [mobileMenuOpen]);
 
   return (
-    <header className="relative left-0 right-0 top-0 z-10 flex items-center justify-between px-4 py-6 sm:px-6 md:fixed md:bg-slate-800 lg:px-8">
+    <header className="fixed left-0 right-0 top-0 z-10 flex items-center justify-between bg-slate-800 px-4 py-3 sm:px-6 md:py-4 lg:px-8">
       <Link href="/">
         <Image src="/img/favicon.ico" alt="Mohammad Ashiqul Islam" width="30" height="20" />
       </Link>
@@ -61,7 +61,7 @@ export const Header = () => {
       {mobileMenuOpen ? (
         <div
           ref={mobileMenuRef}
-          className="translateX(100%) absolute right-0 top-0 flex w-52 bg-gray-800/90 p-4 transition-transform duration-300 ease-in-out md:hidden"
+          className="translateX(100%) absolute right-0 top-full flex w-52 bg-gray-800/90 p-4 transition-transform duration-300 ease-in-out md:hidden"
         >
           <div>
             <ul className="space-y-2">
@@ -84,12 +84,12 @@ export const Header = () => {
               </Link>
             </Button>
           </div>
-          <Button variant="ghost" className="border-2 border-gray-600" onClick={toggleMobileMenu}>
+          <Button variant="ghost" className="border border-gray-600" onClick={toggleMobileMenu}>
             <X className="h-6 w-6" />
           </Button>
         </div>
       ) : (
-        <div className="absolute right-0 top-0 p-4 md:hidden">
+        <div className="absolute right-0 top-0 px-4 py-2 md:hidden">
           <Button variant="ghost" className="border border-gray-600" onClick={toggleMobileMenu}>
             <Menu className="h-6 w-6" />
           </Button>

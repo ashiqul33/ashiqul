@@ -129,7 +129,7 @@
     },
     {
       "title": "MyPlay Game",
-      "description": "MyPlay Games is an online platform where users can subscribe and play various games. The project involved developing a robust backend API and an interactive frontend interface.",
+      "description": "MyPlay Game is an online platform where users can subscribe and play various games. The project involved developing a robust backend API and an interactive frontend interface.",
       "points": [
         "Successfully developed and deployed a scalable API using .Net 6, ensuring smooth and efficient game interactions.",
         "Designed and implemented a responsive and user-friendly frontend interface using React and Ant Design, enhancing the user experience."
