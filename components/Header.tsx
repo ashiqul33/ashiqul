@@ -26,7 +26,9 @@ export const Header = () => {
     };
 
     const handleScroll = () => {
-      mobileMenuOpen && setMobileMenuOpen(false);
+      if (mobileMenuOpen) {
+        setMobileMenuOpen(false);
+      }
     };
 
     document.addEventListener("mousedown", handleOutsideClick);
@@ -88,7 +90,7 @@ export const Header = () => {
         </div>
       ) : (
         <div className="absolute right-0 top-0 p-4 md:hidden">
-          <Button variant="ghost" onClick={toggleMobileMenu}>
+          <Button variant="ghost" className="border border-gray-600" onClick={toggleMobileMenu}>
             <Menu className="h-6 w-6" />
           </Button>
         </div>
