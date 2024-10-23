@@ -32,7 +32,7 @@ export const Header = () => {
         </Link>
       </Button>
       {mobileMenuOpen ? (
-        <div className="translateX(100%) absolute right-0 top-0 flex w-52 bg-gray-800/90 p-4 transition-transform duration-300 ease-in-out">
+        <div className="translateX(100%) absolute right-0 top-0 flex w-52 bg-gray-800/90 p-4 transition-transform duration-300 ease-in-out md:hidden">
           <div>
             <ul className="space-y-2">
               <li>
