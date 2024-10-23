@@ -5,7 +5,7 @@ export const AboutSection = ({ about, image }: { about: { description: string[];
   const { description, quickFacts } = about;
   return (
     <section className="bg-gray-900 py-12 md:py-24" id="about">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-8">
         <SectionTitle>About me</SectionTitle>
         <div className="flex flex-col items-start md:flex-row">
           <div className="mb-8 flex md:mb-0 md:w-2/5">

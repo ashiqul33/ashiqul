@@ -16,9 +16,7 @@ export const Header = () => {
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
   return (
-    <header
-      className={`${mobileMenuOpen ? "relative" : "left-0 right-0 top-0 z-10 md:fixed"} flex items-center justify-between bg-slate-800 px-4 py-6 sm:px-6 lg:px-8`}
-    >
+    <header className="relative left-0 right-0 top-0 z-10 flex items-center justify-between px-4 py-6 sm:px-6 md:fixed md:bg-slate-800 lg:px-8">
       <div className="text-2xl font-bold"></div>
       <nav className="hidden md:block">
         <ul className="flex space-x-6">
@@ -33,19 +31,37 @@ export const Header = () => {
           Download CV
         </Link>
       </Button>
-      <Button variant="ghost" className="md:hidden" onClick={toggleMobileMenu}>
-        {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-      </Button>
-      {mobileMenuOpen && (
-        <div className="absolute left-0 right-0 top-full bg-gray-800 p-4 md:hidden">
-          <ul className="space-y-2">
-            <NavItem href="#about">About</NavItem>
-            <NavItem href="#skills">Skills</NavItem>
-            <NavItem href="#experiences">Experiences</NavItem>
-            <NavItem href="#projects">Projects</NavItem>
-          </ul>
-          <Button variant="default" className="hidden rounded-xl font-bold text-black md:inline-flex">
-            Download CV
+      {mobileMenuOpen ? (
+        <div className="translateX(100%) absolute right-0 top-0 flex w-52 bg-gray-800/90 p-4 transition-transform duration-300 ease-in-out">
+          <div>
+            <ul className="space-y-2">
+              <li>
+                <NavItem href="#about">About</NavItem>
+              </li>
+              <li>
+                <NavItem href="#skills">Skills</NavItem>
+              </li>
+              <li>
+                <NavItem href="#experiences">Experiences</NavItem>
+              </li>
+              <li>
+                <NavItem href="#projects">Projects</NavItem>
+              </li>
+            </ul>
+            <Button variant="default" className="mt-4 rounded-xl font-bold text-black">
+              <Link href="/file/Mohammad_Ashiqul_Islam.pdf" target="_blank" rel="noopener noreferrer">
+                Download CV
+              </Link>
+            </Button>
+          </div>
+          <Button variant="ghost" className="border-2 border-gray-600" onClick={toggleMobileMenu}>
+            <X className="h-6 w-6" />
+          </Button>
+        </div>
+      ) : (
+        <div className="absolute right-0 top-0 p-4 md:hidden">
+          <Button variant="ghost" onClick={toggleMobileMenu}>
+            <Menu className="h-6 w-6" />
           </Button>
         </div>
       )}

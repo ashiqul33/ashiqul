@@ -8,7 +8,7 @@ type skillType = {
 
 export const SkillSection = ({ skills }: { skills: skillType[] }) => (
   <section className="py-16 md:py-24" id="skills">
-    <div className="container mx-auto text-center">
+    <div className="container mx-auto px-6 text-center lg:px-8">
       <SectionTitle>Skills</SectionTitle>
       <h3 className="mb-8 text-xl text-gray-300">The skills, tools and technologies I am really good at:</h3>
       <div className="flex flex-wrap items-center justify-center gap-12 md:gap-20">
