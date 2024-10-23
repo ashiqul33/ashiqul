@@ -61,7 +61,7 @@ export const Header = () => {
       {mobileMenuOpen ? (
         <div
           ref={mobileMenuRef}
-          className="translateX(100%) absolute right-0 top-full flex w-52 bg-gray-800/90 p-4 transition-transform duration-300 ease-in-out md:hidden"
+          className="translateX(100%) absolute right-0 top-full flex w-52 rounded-bl-lg bg-gray-900/95 p-4 transition-transform duration-300 ease-in-out md:hidden"
         >
           <div>
             <ul className="space-y-2">
