@@ -10,7 +10,6 @@ export default function Home() {
   return (
     <main className="min-h-screen w-full">
       <HeroSection
-        nickName={portfolio.nickName}
         title={portfolio.title}
         email={portfolio.email}
         github={portfolio.github}
