@@ -22,7 +22,7 @@ export const HeroSection = ({ title, email, github, linkedin, image, name, locat
     </div>
     <div className="md:w-1/2">
       <h2 className="mb-2 text-4xl font-bold">Hi👋 I&apos;m </h2>
-      <h1 className="mb-2 text-2xl font-bold md:text-3xl">{name}</h1>
+      <span className="flex mb-2 text-2xl font-bold md:text-3xl" dangerouslySetInnerHTML={{ __html: name }}></span>
       <p className="mb-6 text-lg text-gray-400 md:text-xl">{title}</p>
       <div className="mb-8 flex items-center text-gray-400">
         <MapPin className="mr-2 h-5 w-5" />

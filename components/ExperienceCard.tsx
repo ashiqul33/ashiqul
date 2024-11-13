@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
+import { memo } from "react";
 
 export type experienceType = {
   role: string;
@@ -9,7 +10,7 @@ export type experienceType = {
   logo: string;
 };
 
-export const ExperienceCard = ({ role, company, period, responsibilities, logo }: experienceType) => (
+export const ExperienceCard = memo(({ role, company, period, responsibilities, logo }: experienceType) => (
   <Card className="mb-6 border-gray-700 bg-gray-800 md:w-2/3">
     <CardContent className="p-6 md:flex">
       <div className="mr-6 hidden md:flex">
@@ -31,4 +32,4 @@ export const ExperienceCard = ({ role, company, period, responsibilities, logo }
       </div>
     </CardContent>
   </Card>
-);
+));

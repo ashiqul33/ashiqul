@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
+import { memo } from "react";
 
 export type projectType = {
   title: string;
@@ -12,7 +13,7 @@ export type projectType = {
   points?: string[];
 };
 
-export const ProjectCard = ({ project, index }: { project: projectType; index: number }) => (
+export const ProjectCard = memo(({ project, index }: { project: projectType; index: number }) => (
   <Card className="flex flex-col border-gray-700 bg-gray-800 md:flex-row">
     <CardContent
       className={`order-first flex flex-1 rounded-t-xl bg-gray-600 p-0 sm:rounded-none ${(index & 1) === 0 ? "md:order-first md:rounded-s-xl" : "md:order-last md:rounded-e-xl"}`}
@@ -58,4 +59,4 @@ export const ProjectCard = ({ project, index }: { project: projectType; index: n
       )}
     </CardContent>
   </Card>
-);
+));

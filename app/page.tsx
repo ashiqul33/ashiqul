@@ -15,7 +15,7 @@ export default function Home() {
         github={portfolio.github}
         linkedin={portfolio.linkedin}
         image={portfolio.image}
-        name={portfolio.name}
+        name={portfolio.name_html}
         location={portfolio.location}
       />
       <AboutSection about={portfolio.about} image={portfolio.imageAbout} />
