@@ -54,9 +54,9 @@ export const Header = () => {
         </ul>
       </nav>
       <Button variant="default" className="hidden rounded-xl font-bold text-black md:block">
-        <Link href="/file/Mohammad_Ashiqul_Islam.pdf" target="_blank" rel="noopener noreferrer">
+        <a href="/file/Mohammad_Ashiqul_Islam.pdf" target="_blank" rel="noopener noreferrer">
           Download CV
-        </Link>
+        </a>
       </Button>
       {mobileMenuOpen ? (
         <div

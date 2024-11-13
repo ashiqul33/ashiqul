@@ -33,3 +33,5 @@ export const ExperienceCard = memo(({ role, company, period, responsibilities, l
     </CardContent>
   </Card>
 ));
+
+ExperienceCard.displayName = "ExperienceCard";

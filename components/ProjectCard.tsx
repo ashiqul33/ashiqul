@@ -60,3 +60,5 @@ export const ProjectCard = memo(({ project, index }: { project: projectType; ind
     </CardContent>
   </Card>
 ));
+
+ProjectCard.displayName = "ProjectCard";
