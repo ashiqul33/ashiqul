@@ -21,8 +21,8 @@ import { Buffer } from "buffer";
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
 
-const caCertBase64 = process.env.DATABASE_PEM_BASE64 as string;
-const caCert = Buffer.from(caCertBase64, "base64").toString("utf-8");
+// const caCertBase64 = process.env.DATABASE_PEM_BASE64 as string;
+// const caCert = Buffer.from(caCertBase64, "base64").toString("utf-8");
 
 export default buildConfig({
   admin: {
@@ -68,7 +68,7 @@ export default buildConfig({
       connectionString: process.env.DATABASE_URI || "",
       ssl: {
         rejectUnauthorized: false,
-        ca: caCert,
+        // ca: caCert,
       },
     },
   }),
