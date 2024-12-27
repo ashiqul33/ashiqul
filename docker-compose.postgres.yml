@@ -1,0 +1,17 @@
+services:
+  ashiqul_postgres:
+    image: postgres:17.2-alpine
+    env_file:
+      - .env
+    container_name: ashiqul_postgres
+    restart: always
+    # ports:
+    #   - 5432:5432
+    volumes:
+      - ./postgres:/var/lib/postgresql/data
+    networks:
+      - ashiqul
+
+networks:
+  ashiqul:
+    external: true

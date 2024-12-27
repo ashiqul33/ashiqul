@@ -1,9 +1,17 @@
 services:
   ashiqul:
     container_name: ashiqul
+    restart: always
     image: ashiqul
-    build: .
-    ports:
-      - 3000:3000
     env_file:
       - .env
+    ports:
+      - 3000:3000
+    volumes:
+      - ./public:/app/public
+    networks:
+      - ashiqul
+
+networks:
+  ashiqul:
+    external: true

@@ -6,7 +6,9 @@ dist
 .gitignore
 Dockerfile
 docker-compose.yml
+docker-compose.postgres.yml
 yarn.lock
 *.log
 .cache
 README.md
+postgres
