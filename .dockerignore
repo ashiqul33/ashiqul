@@ -1,0 +1,12 @@
+node_modules
+.next
+dist
+.env.example
+.git
+.gitignore
+Dockerfile
+docker-compose.yml
+yarn.lock
+*.log
+.cache
+README.md

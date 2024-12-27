@@ -1,0 +1,9 @@
+services:
+  ashiqul:
+    container_name: ashiqul
+    image: ashiqul
+    build: .
+    ports:
+      - 3000:3000
+    env_file:
+      - .env
