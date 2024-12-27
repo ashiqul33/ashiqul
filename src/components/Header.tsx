@@ -55,7 +55,7 @@ export const Header = () => {
           <NavItem href="/#skills">Skills</NavItem>
           <NavItem href="/#experiences">Experiences</NavItem>
           <NavItem href="/#projects">Projects</NavItem>
-          <NavItem href="posts">Posts</NavItem>
+          <NavItem href="/posts">Posts</NavItem>
         </ul>
       </nav>
       {isHome ? (
@@ -87,7 +87,7 @@ export const Header = () => {
                 <NavItem href="/#projects">Projects</NavItem>
               </li>
               <li>
-                <NavItem href="posts">Posts</NavItem>
+                <NavItem href="/posts">Posts</NavItem>
               </li>
             </ul>
             {isHome && (
