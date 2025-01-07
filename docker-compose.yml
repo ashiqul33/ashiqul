@@ -2,7 +2,7 @@ services:
   ashiqul:
     container_name: ashiqul
     restart: always
-    image: ashiqul
+    image: ashiqul33/ashiqul:latest
     env_file:
       - .env
     ports:
