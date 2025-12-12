@@ -2,8 +2,10 @@ import { MigrateUpArgs, MigrateDownArgs, sql } from '@payloadcms/db-postgres'
 
 export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.execute(sql`
+    CREATE EXTENSION IF NOT EXISTS pgcrypto;
+
     CREATE TABLE IF NOT EXISTS users_sessions (
-      id SERIAL PRIMARY KEY,
+      id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
       _order INTEGER,
       created_at TIMESTAMP WITHOUT TIME ZONE DEFAULT now(),
       expires_at TIMESTAMP WITHOUT TIME ZONE,
