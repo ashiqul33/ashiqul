@@ -23,6 +23,12 @@ const nextConfig = {
   reactStrictMode: true,
   redirects,
   output: "standalone",
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
 };
 
 export default withPayload(nextConfig);

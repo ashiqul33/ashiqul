@@ -12,3 +12,4 @@ yarn.lock
 .cache
 README.md
 postgres
+DOCKER_IMAGE_BUILD.md
