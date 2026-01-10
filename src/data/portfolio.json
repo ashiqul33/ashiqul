@@ -16,7 +16,12 @@
       "I'm a software engineer with expertise in JavaScript, NodeJS, and RESTful APIs. I'm passionate about creating scalable backend systems and contributing to dynamic projects that push the boundaries of what's possible in web development.",
       "When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying a good cup of coffee while brainstorming innovative solutions to complex problems."
     ],
-    "quickFacts": ["B.Sc in Computer Science Engineering", "Full Stack Developer", "Quick Learner", "Problem Solver"]
+    "quickFacts": [
+      "B.Sc in Computer Science Engineering",
+      "Full Stack Developer",
+      "Quick Learner",
+      "Problem Solver"
+    ]
   },
   "skills": [
     {
@@ -78,13 +83,26 @@
   ],
   "experiences": [
     {
+      "company": "Piistech Limited",
+      "role": "Software Engineer",
+      "period": "December 2024 – Present",
+      "responsibilities": [
+        "Developing and maintaining scalable web applications using .NET, .NET Framework, and C#, ensuring performance, security, and maintainability.",
+        "Designing and implementing RESTful APIs to enable seamless integration between frontend, backend, and third-party services.",
+        "Optimizing application performance through SQL Server schema design, complex query writing, and database tuning.",
+        "Deployed a Dockerized WireGuard VPN on Raspberry Pi with Nginx reverse proxy to securely access IP-restricted development environments.",
+        "Collaborating with cross-functional teams to troubleshoot production issues, minimize downtime, and improve system reliability."
+      ],
+      "logo": "/img/piistech.png"
+    },
+    {
       "company": "Gakk Media (BD) Ltd.",
       "role": "Sr. Software Engineer",
       "period": "October 2023 – July 2024",
       "responsibilities": [
-        "Developed RESTful APIs using .NET, Entity Framework, and SQL Server, optimizing data management for scalability and performance, resulting in a 30% increase in data retrieval speed.",
-        "Designed and implemented a visually appealing and intuitive frontend utilizing NextJS, enhancing engagement.",
-        "Integrated payment APIs including Nagad and bKash to facilitate seamless transaction processing."
+        "Developed high-performance RESTful APIs using .NET, Entity Framework, and SQL Server, optimizing scalability and data handling, resulting in a 30% increase in data retrieval speed.",
+        "Designed and implemented modern, user-friendly frontend interfaces using NextJS, improving engagement and usability.",
+        "Integrated secure payment gateways including Nagad and bKash for seamless transaction processing."
       ],
       "logo": "/img/gakk-media.png"
     },
@@ -93,22 +111,22 @@
       "role": "Software Engineer",
       "period": "March 2023 – September 2023",
       "responsibilities": [
-        "Developed API using NestJS, TypeORM, and MySQL, ensuring efficient and scalable data management.",
-        "Implemented fast search functionality using Elastic NoSQL database, enhancing user experience with faster and more accurate search results.",
-        "Designed frontend using NextJS and Vue, creating a visually appealing and user-friendly interface."
+        "Developed scalable backend APIs using NestJS, TypeORM, and MySQL, ensuring efficient and maintainable data management.",
+        "Implemented fast and accurate search functionality using ElasticSearch (NoSQL), significantly improving search performance.",
+        "Built responsive and intuitive frontend interfaces using NextJS and Vue."
       ],
       "logo": "/img/daniyal.webp"
     },
     {
       "company": "Computer Ease Limited",
       "role": "Programmer",
-      "period": "July 2021 – Feb 2023",
+      "period": "July 2021 – February 2023",
       "responsibilities": [
-        "Successfully migrated a .NET application and database from a virtual machine to an Azure server, resulting in improved application performance and reduced infrastructure costs.",
-        "Developed enterprise software for various companies, meeting client requirements and delivering high-quality software within project timelines.",
-        "Implemented system designs provided by the team lead, ensuring adherence to coding standards and best practices.",
-        "Analyzed various systems to identify and fix bugs, resulting in improved system stability and user experience.",
-        "Wrote efficient code and SQL queries, and provided support for already developed software, ensuring prompt resolution of issues and high customer satisfaction."
+        "Migrated legacy .NET applications and databases from virtual machines to Microsoft Azure, improving performance and reducing infrastructure costs.",
+        "Developed enterprise-grade software solutions for large-scale business systems.",
+        "Implemented system designs following coding standards and best practices.",
+        "Analyzed existing systems to identify and resolve bugs, improving stability and user experience.",
+        "Wrote optimized code and SQL queries and provided ongoing support for production systems."
       ],
       "logo": "/img/cel.webp"
     }
@@ -116,59 +134,90 @@
   "projects": [
     {
       "title": "Online Exam System",
-      "description": "This platform functions as an online examination system, providing users with the option to take both <b>multiple-choice and written exams</b>. Once a participant finishes an exam, they can view a results page that presents comprehensive question details, along with a <b>leaderboard</b> highlighting the top achievers. Users also have the opportunity to engage in practice exams and access real-time result updates.",
+      "description": "A full-featured online examination platform supporting <b>multiple-choice and written exams</b>, real-time result processing, and competitive <b>leaderboards</b>.",
       "image": "/project/online-exam.webp",
-      "tags": ["TypeScript", "NestJS", "NextJS", "PostgreSQL", "Bootstrap"],
+      "tags": [
+        "TypeScript",
+        "NestJS",
+        "NextJS",
+        "PostgreSQL",
+        "Bootstrap"
+      ],
       "link": "https://t.ly/Pt6WM",
       "points": [
-        "Developed a robust backend API using NestJS and TypeScript, ensuring efficient exam management and result processing.",
-        "Implemented a responsive frontend with NextJS, providing an intuitive user interface for exam-taking and result viewing.",
-        "Integrated PostgreSQL for secure and scalable data storage, handling user information, exam data, and results.",
-        "Designed and implemented a real-time leaderboard system, enhancing user engagement and competitiveness.",
-        "Created a flexible exam creation system supporting both multiple-choice and written question types."
+        "Developed a robust backend API using NestJS and TypeScript for exam management and result processing.",
+        "Built a responsive frontend using NextJS for seamless exam participation and result viewing.",
+        "Integrated PostgreSQL for secure and scalable storage of users, exams, and results.",
+        "Implemented a real-time leaderboard system to increase user engagement.",
+        "Designed a flexible exam creation system supporting both MCQ and written question types."
       ]
     },
     {
       "title": "MyPlay Game",
-      "description": "MyPlay Game is an online platform where users can subscribe and play various games. The project involved developing a robust backend API and an interactive frontend interface.",
+      "description": "An online gaming platform where users can subscribe and play multiple games with a scalable backend and modern UI.",
       "points": [
-        "Successfully developed and deployed a scalable API using .Net 6, ensuring smooth and efficient game interactions.",
-        "Designed and implemented a responsive and user-friendly frontend interface using React and Ant Design, enhancing the user experience."
+        "Developed and deployed scalable backend APIs using .NET 6 for smooth game interactions.",
+        "Implemented a responsive and user-friendly frontend using React and Ant Design.",
+        "Ensured reliable subscription and gameplay management."
       ],
       "image": "/project/my-play.webp",
-      "tags": ["C#", ".Net 6", "JavaScript", "ReactJS", "SQL Server"],
+      "tags": [
+        "C#",
+        ".NET 6",
+        "JavaScript",
+        "ReactJS",
+        "SQL Server"
+      ],
       "link": "https://myplay.games"
     },
     {
       "title": "Online Sales and Distribution System (OSDS)",
-      "description": "OSDS is the most popular secondary sales and distribution system in Bangladesh, featuring a complex and fully dynamic promotion and incentive module. This comprehensive system covers all aspects of secondary sales and related supply chain business requirements.",
+      "description": "A widely used secondary sales and distribution system in Bangladesh, supporting complex promotion, incentive, and supply chain workflows.",
       "points": [
-        "Developed a robust system capable of handling complex business logic for sales, distribution, and supply chain management.",
-        "Implemented dynamic promotion and incentive modules, allowing for flexible and customizable business strategies.",
-        "Integrated various services including REST, SOAP and SSRS to create a comprehensive solution.",
-        "Utilized Windows Service for background processing and task automation."
+        "Developed large-scale sales and distribution features with complex business logic.",
+        "Implemented dynamic promotion and incentive modules for flexible business strategies.",
+        "Integrated REST, SOAP, SSRS, and Windows Services for enterprise reporting and automation."
       ],
       "image": "/project/osds.webp",
-      "tags": ["C#", "JavaScript", "ASP.NET", "Telerik", "SQL Server"],
+      "tags": [
+        "C#",
+        "JavaScript",
+        "ASP.NET",
+        "Telerik",
+        "SQL Server"
+      ],
       "link": "https://arlacompass.azurewebsites.net/flogin"
     },
     {
       "title": "TradeTrack (Point of Sale System)",
-      "description": "TradeTrack is a small business Point of Sale (POS) system that I developed. The project showcases a <b>robust architecture</b> with a backend built on the .NET Framework, implementing <b>Clean Architecture principles</b>.",
+      "description": "A small business POS system built using <b>Clean Architecture</b> and <b>CQRS</b> principles on the .NET platform.",
       "points": [
-        "Implemented the CQRS (Command Query Responsibility Segregation) pattern in the backend, enhancing separation of concerns.",
-        "Utilized the MediatR library to effectively manage commands and queries, facilitating the CQRS implementation.",
-        "Adopted the repository pattern to abstract the data access layer, improving maintainability and flexibility."
+        "Implemented CQRS using MediatR to improve separation of concerns.",
+        "Applied repository pattern to abstract the data access layer.",
+        "Designed the system for scalability, maintainability, and extensibility."
       ],
       "image": "/project/tradetrack.webp",
-      "tags": ["C#", ".NET", "SQL Server", "Entity Framework", "CQRS", "Clean Architecture"],
+      "tags": [
+        "C#",
+        ".NET",
+        "SQL Server",
+        "Entity Framework",
+        "CQRS",
+        "Clean Architecture"
+      ],
       "link": ""
     },
     {
       "title": "HGS Hydro Shop",
-      "description": "HGS Hydro Shop, a leading indoor gardening supply company in the USA, provides premium hydroponics equipment and products. We take pride in developing and maintaining their <b>robust ecommerce</b> system.",
+      "description": "A robust ecommerce platform for a leading indoor gardening supply company in the USA.",
       "image": "/project/hgs.webp",
-      "tags": ["JavaScript", "NestJS", "NuxtJS", "MySQL", "Bootstrap"],
+      "tags": [
+        "JavaScript",
+        "NestJS",
+        "NuxtJS",
+        "MySQL",
+        "Bootstrap"
+      ],
       "link": "https://hgshydro.com"
     }
   ]
